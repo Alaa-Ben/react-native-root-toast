@@ -19,11 +19,13 @@ declare module "react-native-root-toast"{
         textColor?: string,
         textStyle?: StyleProp<TextStyle>,
         delay?: number,
+        keyboardAvoiding?: boolean,
         hideOnPress?: boolean,
         onHide?: Function,
         onHidden?: Function,
         onShow?: Function,
-        onShown?: Function
+        onShown?: Function,
+        onPress?: Function
     }
 
     export interface ToastProps extends ToastOptions,ReactNative.ViewProperties{
